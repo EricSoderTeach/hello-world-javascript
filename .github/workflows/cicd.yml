@@ -37,7 +37,7 @@ jobs:
         run: npm install
 
       - name: Bundle
-        run: ncc build src/index.js -o dist
+        run: ncc build src/index.js --license licenses.txt
 
       - name: Check if new bundle is created and needs to be checked in
         id: gitChanges
