@@ -34,7 +34,9 @@ jobs:
 
       - name: Install Dependencies
         id: npm-ci
-        run: npm install
+        run: |
+          npm install
+          npm i -g @vercel/ncc
 
       - name: Bundle
         run: ncc build src/index.js --license licenses.txt
