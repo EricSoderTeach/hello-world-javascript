@@ -1,8 +1,7 @@
 name: Test tag trigger
 on:
-  push: 
-    tags:
-      - '*'
+  release:
+    types: [published]
 jobs:
   test:
     runs-on: ubuntu-latest
