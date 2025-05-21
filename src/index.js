@@ -3,7 +3,6 @@ const core = require('@actions/core');
 const github = require('@actions/github');
 
 try {
-  //test
   const nameToGreet = core.getInput('who-to-greet');
   console.log(`Hello ${nameToGreet}!`);
   const time = (new Date()).toTimeString();
