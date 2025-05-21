@@ -1,6 +1,7 @@
 name: Test tag trigger
 on:
-  workflow_dispatch:
+  release:
+    types: [created]
 jobs:
   test:
     runs-on: ubuntu-latest
